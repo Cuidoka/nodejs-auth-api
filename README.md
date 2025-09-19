@@ -57,13 +57,13 @@ O terminal deverá exibir a mensagem: API rodando na porta 3000.
 
 ## Endpoints da API
 
-Crie uma nova coleção `My Collection`
+Crie uma nova coleção `My Collection` 
 Abaixo está a lista de endpoints disponíveis na API.
 
 ### Autenticação
 
-**POST /api/auth/register**
-Descrição: Registra um novo usuário no sistema.
+**POST /api/auth/register** 
+Descrição: Registra um novo usuário no sistema. 
 Corpo da Requisição (Body) (RAW):
 ```
 {
@@ -73,8 +73,8 @@ Corpo da Requisição (Body) (RAW):
 }
 ```
 Cria outro:
-**POST /api/auth/login** 
-Descrição: Autentica um usuário e retorna um accessToken e um refreshToken.
+**POST /api/auth/login**  
+Descrição: Autentica um usuário e retorna um accessToken e um refreshToken. 
 Corpo da Requisição (Body) (RAW):
 ```
 {
@@ -82,8 +82,8 @@ Corpo da Requisição (Body) (RAW):
     "password": "senha-do-usuario"
 }
 ```
-**POST /api/auth/refresh**
-Descrição: Gera um novo accessToken a partir de um refreshToken válido.
+**POST /api/auth/refresh** 
+Descrição: Gera um novo accessToken a partir de um refreshToken válido. 
 Corpo da Requisição (Body) (RAW):
 ```
 {
@@ -91,9 +91,9 @@ Corpo da Requisição (Body) (RAW):
 }
 ```
 
-**GET /api/auth/me**
-Descrição: Retorna os dados do usuário autenticado. Rota protegida.
-Autorização: Requer um accessToken no cabeçalho.
+**GET /api/auth/me** 
+Descrição: Retorna os dados do usuário autenticado. Rota protegida. 
+Autorização: Requer um accessToken no cabeçalho. 
 Tipo: Bearer Token
 ```
 Token: seu-access-token-aqui
