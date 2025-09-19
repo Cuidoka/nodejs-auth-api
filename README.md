@@ -15,7 +15,7 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <[url-do-seu-repositorio-git](https://github.com/Cuidoka/nodejs-auth-api)>
+    git clone <https://github.com/Cuidoka/nodejs-auth-api>
     ```
 
 2.  **Navegue até a pasta do projeto:**
