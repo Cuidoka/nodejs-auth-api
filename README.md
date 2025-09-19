@@ -52,7 +52,8 @@ node index.js
 
 O terminal deverá exibir a mensagem: API rodando na porta 3000.
 
-## Agora vamos configurar o seu POSTMAN!!
+
+# Agora vamos configurar o seu POSTMAN!!
 
 ## Endpoints da API
 
