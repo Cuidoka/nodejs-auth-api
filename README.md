@@ -58,13 +58,17 @@ O terminal deverá exibir a mensagem: API rodando na porta 3000.
 ## Endpoints da API
 
 Crie uma nova coleção `My Collection` 
+
 Abaixo está a lista de endpoints disponíveis na API.
 
 ### Autenticação
 
 **POST /api/auth/register** 
-    Descrição: Registra um novo usuário no sistema. 
-    Corpo da Requisição (Body) (RAW):
+    
+Descrição: Registra um novo usuário no sistema. 
+    
+Corpo da Requisição (Body) (RAW):
+    
 ```
 {
     "name": "Nome do Usuário",
@@ -74,8 +78,10 @@ Abaixo está a lista de endpoints disponíveis na API.
 ```
 Cria outro:
 **POST /api/auth/login**  
-    Descrição: Autentica um usuário e retorna um accessToken e um refreshToken. 
-    Corpo da Requisição (Body) (RAW):
+
+Descrição: Autentica um usuário e retorna um accessToken e um refreshToken. 
+
+Corpo da Requisição (Body) (RAW):
 ```
 {
     "email": "usuario@email.com",
@@ -83,8 +89,10 @@ Cria outro:
 }
 ```
 **POST /api/auth/refresh** 
-    Descrição: Gera um novo accessToken a partir de um refreshToken válido. 
-    Corpo da Requisição (Body) (RAW):
+
+Descrição: Gera um novo accessToken a partir de um refreshToken válido. 
+
+Corpo da Requisição (Body) (RAW):
 ```
 {
     "refreshToken": "seu-refresh-token-aqui"
@@ -92,26 +100,13 @@ Cria outro:
 ```
 
 **GET /api/auth/me** 
-    Descrição: Retorna os dados do usuário autenticado. Rota protegida. 
-    Autorização: Requer um accessToken no cabeçalho. 
+
+Descrição: Retorna os dados do usuário autenticado. Rota protegida. 
+
+Autorização: Requer um accessToken no cabeçalho. 
     Tipo: Bearer Token
 ```
 Token: seu-access-token-aqui
 ```
 
 Configurado o seu **POSTMAN!**
-
-
----
-
-### Desafio para Você
-
-Agora que você tem um `README.md` completo para o backend, o desafio é criar um para o seu **projeto Flutter**.
-
-A estrutura será parecida, mas as seções de "Instalação" e "Como Executar" serão diferentes. Pense no que um desenvolvedor precisaria saber:
-*   **Pré-requisitos:** Flutter SDK.
-*   **Instalação:** `flutter pub get`.
-*   **Como Executar:** `flutter run` ou `flutter run -d chrome` (Caso queira executar no Chrome direto).
-*   **Observação Importante:** Mencionar que a API backend precisa estar rodando e, se necessário, ajustar o IP no `api_service.dart` (de `localhost` para `10.0.2.2` para o emulador Android).
-
-Tente criar esse arquivo. É o exercício perfeito para consolidar o que você aprendeu.
