@@ -63,8 +63,8 @@ Abaixo está a lista de endpoints disponíveis na API.
 ### Autenticação
 
 **POST /api/auth/register** 
-Descrição: Registra um novo usuário no sistema. 
-Corpo da Requisição (Body) (RAW):
+    Descrição: Registra um novo usuário no sistema. 
+    Corpo da Requisição (Body) (RAW):
 ```
 {
     "name": "Nome do Usuário",
@@ -74,8 +74,8 @@ Corpo da Requisição (Body) (RAW):
 ```
 Cria outro:
 **POST /api/auth/login**  
-Descrição: Autentica um usuário e retorna um accessToken e um refreshToken. 
-Corpo da Requisição (Body) (RAW):
+    Descrição: Autentica um usuário e retorna um accessToken e um refreshToken. 
+    Corpo da Requisição (Body) (RAW):
 ```
 {
     "email": "usuario@email.com",
@@ -83,8 +83,8 @@ Corpo da Requisição (Body) (RAW):
 }
 ```
 **POST /api/auth/refresh** 
-Descrição: Gera um novo accessToken a partir de um refreshToken válido. 
-Corpo da Requisição (Body) (RAW):
+    Descrição: Gera um novo accessToken a partir de um refreshToken válido. 
+    Corpo da Requisição (Body) (RAW):
 ```
 {
     "refreshToken": "seu-refresh-token-aqui"
@@ -92,9 +92,9 @@ Corpo da Requisição (Body) (RAW):
 ```
 
 **GET /api/auth/me** 
-Descrição: Retorna os dados do usuário autenticado. Rota protegida. 
-Autorização: Requer um accessToken no cabeçalho. 
-Tipo: Bearer Token
+    Descrição: Retorna os dados do usuário autenticado. Rota protegida. 
+    Autorização: Requer um accessToken no cabeçalho. 
+    Tipo: Bearer Token
 ```
 Token: seu-access-token-aqui
 ```
